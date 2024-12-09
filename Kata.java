@@ -53,6 +53,14 @@ public class Kata {
         return true;
     }
 
+
+	public static long squareOf(int number) {
+	return number * number;
+}
+
+
+
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -113,5 +121,31 @@ public class Kata {
             }
             System.out.println("Is the number a palindrome? " + isPalindrome(number));
         }
-    }
+    
+
+	System.out.println("Enter integer to get its factorial: ");
+int entry = scanner.nextInt();
+
+	int result = 1;
+
+	for (int count = 1; count <= entry; count++){	
+	result *= count;
+}
+	System.out.println(result);
+
+
+
+System.out.println("Enter an integer to calculate the square: ");
+	int entry9 = scanner.nextInt();
+
+	long result3 = squareOf(entry9);
+
+
+	System.out.println("The square of " + entry9 + " is " + result3);
+
+
+
+
+
+}
 }
